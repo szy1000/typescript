@@ -1,0 +1,2 @@
+# typescript
+Starting my typeScript
