@@ -14,3 +14,43 @@ let Shen: IPerson = {
 // Shen.id = 2
 
 console.log(Shen)
+
+
+// implements
+interface Radio {
+    switchRadio():void
+}
+
+
+interface Battery {
+    checkBatteryStatus():void
+}
+
+// 合二为一
+
+interface RadioWithBattery extends Radio{
+    checkBatteryStatus():void
+}
+
+class Car implements Radio{
+    switchRadio() {
+
+    }
+}
+
+class CellPhone implements Radio,Battery{
+    switchRadio() {
+
+    }
+    checkBatteryStatus() {
+
+    }
+}
+
+class CellPhone2 implements RadioWithBattery{
+    switchRadio() {
+    }
+    checkBatteryStatus() {
+
+    }
+}

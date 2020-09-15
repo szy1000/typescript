@@ -1,5 +1,12 @@
 class Animal {
-    name: string;
+    // private
+    // protected
+    public name: string;
+
+    static categoies: string[]  = ['mammal', 'bird']
+    static isAnimal(a) {
+        return a instanceof Animal
+    }
 
     constructor(name: string) {
         // super(props);
@@ -40,7 +47,7 @@ class Cat extends Animal{
         return 'Mnow, ' + super.run()
     }
 
-}
+ }
 
 const maomao = new Cat('maomao')
 

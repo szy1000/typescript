@@ -1,3 +1,3 @@
 const hello = (name: string) => `hello ${name}`
 
-hello(111)
+hello('111')
