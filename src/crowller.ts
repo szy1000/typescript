@@ -1,1 +1,8 @@
-console.log('hello typescript');
+
+class Crowller {
+    constructor() {
+        console.log('hello typescript');
+    }
+}
+
+new Crowller()
